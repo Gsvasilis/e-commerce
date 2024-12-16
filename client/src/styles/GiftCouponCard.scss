@@ -1,0 +1,107 @@
+@import "../responsive.scss";
+.gift-coupon-card{
+    border: 1px solid aquamarine;
+    border-radius: 8px;
+    box-shadow: 0 0 5px aquamarine;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+    @include lg {
+        max-width: 350px;
+        margin: auto;
+
+ 
+    }
+    @include sm {
+        max-width: 300px;
+  
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        input{
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            border: 1px solid aquamarine;
+            border-radius: 4px;
+            outline: none;
+            background-color: transparent;
+            color: aquamarine;
+            &:active{
+                box-shadow: 0 0 20px aquamarine;
+            }
+            &::placeholder{
+                color: aquamarine;
+                font-weight: 100;
+                
+                
+            }
+            @include sm {
+                max-width: 250px;
+          
+                
+            }
+
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 15px;
+            width: 300px;
+            height: 40px;
+            border: 1px solid aquamarine;
+            border-radius: 8px;
+            box-shadow: 0 0 5px;
+            background: transparent;
+            color: aquamarine;
+            cursor: pointer;
+            &:hover{
+                background: hsla(160, 100%, 75%, 0.274);
+                transition: 1s ease;
+
+            }
+            @include sm {
+                max-width: 250px;
+          
+                
+            }
+        } 
+    }
+
+    .coupon-apply{
+        border: 1px solid aquamarine;
+        border-radius: 8px;
+        box-shadow: 0 0 5px aquamarine;
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        h4{
+            font-weight: 300;
+        }
+    }
+    .coupon-available{
+        border: 1px solid aquamarine;
+        border-radius: 8px;
+        box-shadow: 0 0 5px aquamarine;
+        padding: 10px;
+        h4{
+            font-weight: 300;
+        }
+    }
+}

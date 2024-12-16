@@ -1,0 +1,124 @@
+@import "../responsive.scss";
+.product-page{
+    display: flex;
+    padding-top: 50px;
+    @include xl {
+        max-width: 1024px;
+        margin: auto;
+    }
+    @include lg {
+        max-width: 768px;
+        gap: 30px;
+    }
+    @include md {
+        max-width: 576px;
+        margin: auto;
+    }
+    @include sm {
+        max-width: 350px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        gap: 20px;
+        .smallImgContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100px;
+            height: 400px;
+            overflow-y: scroll;
+            @include md{
+                height: 300px;
+            }
+            @include sm{
+                height: 200px;
+            }
+            cursor: pointer;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+
+            }
+        }
+        .mainImgContainer{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            @include md{
+                width: 300px;
+                height: 300px;
+            }
+            @include sm{
+                width: 200px;
+                height: 200px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        @include lg{
+            width: 300px;
+        }
+
+        .product-name{
+            h4{
+                font-weight: 300;
+            }
+        }
+        .product-desc{
+            width: 400px;
+            line-height: 20px;
+            text-align: center;
+            @include lg{
+                width: 300px;
+            }
+            @include sm{
+                width: 350px;
+            }
+            p{
+                font-weight: 100;
+            }
+        }
+        .product-price{
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn{
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: 15px;
+                padding: 8px 18px;
+                border: 1px solid aquamarine;
+                border-radius: 8px;
+                box-shadow: 0 0 5px;
+                background: transparent;
+                color: aquamarine;
+                cursor: pointer;
+                &:hover{
+                    background: hsla(160, 100%, 75%, 0.274);
+                    transition: 1s ease;
+    
+                }
+            }
+        }
+    }
+}

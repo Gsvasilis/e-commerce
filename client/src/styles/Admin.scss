@@ -1,0 +1,36 @@
+.admin{
+    .title{
+        text-align: center;
+        h2{
+
+            font-weight: 300;
+        }
+    }
+    .tabsContainer{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 30px auto;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 15px;
+            padding: 8px 18px;
+            border: 1px solid aquamarine;
+            border-radius: 8px;
+            box-shadow: 0 0 5px;
+            background: transparent;
+            color: aquamarine;
+            cursor: pointer;
+            &:hover{
+                background: hsla(160, 100%, 75%, 0.274);
+                transition: 1s ease;
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,73 @@
+@import "../responsive.scss";
+
+.homepage {
+    padding-bottom: 20px;
+
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        @include xl {
+            max-width: 1024px;
+            margin: auto;
+        }
+        @include lg {
+            max-width: 768px;
+            margin: auto;
+        }
+        @include md {
+            max-width: 576px;
+            margin: auto;
+        }
+        @include sm {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        h1 {
+            font-weight: 400;
+            @include sm {
+                font-size: 25px;
+            }
+
+        }
+
+        p {
+            font-weight: 100;
+            @include sm {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .categoryContainer {
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+
+        @include xl {
+            max-width: 1024px;
+            margin: auto;
+        }
+        @include lg {
+            max-width: 768px;
+            margin: auto;
+        }
+        @include md {
+            max-width: 576px;
+            margin: auto;
+        }
+        @include sm {
+            max-width: 300px;
+            margin: auto;
+        }
+
+    }
+
+
+
+}

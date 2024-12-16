@@ -1,0 +1,49 @@
+@import "../responsive.scss";
+.category-page{
+    padding-bottom: 20px;
+    position: relative;
+
+    .title{
+        text-align: center;
+        h1{
+            font-weight: 400;
+        }
+    }
+    .noProducts{
+        position: absolute; 
+        top: 200px; 
+        left: 50%;
+        transform: translateX(-50%);
+
+        h2{
+            font-size: 50px;
+            font-weight: 100;
+        }
+    }
+    .productsContainer{
+         display: flex;
+         flex-wrap: wrap;
+            gap: 10px;
+            
+        @include xl {
+            max-width: 1024px;
+            margin: auto;
+            padding:0px 15px; 
+        }
+        @include lg {
+            max-width: 768px;
+            margin: auto;
+            padding:0px 10px; 
+        }
+        @include md {
+            max-width: 576px;
+            margin: auto;
+            padding:0px 15px; 
+        }
+        @include sm {
+            max-width: 350px;
+            margin: auto;
+            padding:0px 15px; 
+        }
+    }
+}

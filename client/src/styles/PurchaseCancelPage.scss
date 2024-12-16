@@ -1,0 +1,47 @@
+.purchaseCancelPage{
+    display: flex;
+    justify-content: center;
+    .cancelContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .titleContainer{
+            text-align: center;
+            h1{
+                font-weight: 400;
+            }
+            p,span{
+                font-weight: 200;
+            }
+        }
+        .payment-false{
+            width: 500px;
+            text-align: center;
+            p,span{
+                font-weight: 200;
+            }
+        }
+        .return{
+            text-align: center;
+            .link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: 15px;
+                padding: 8px 18px;
+                border: 1px solid aquamarine;
+                border-radius: 8px;
+                box-shadow: 0 0 5px;
+                background: transparent;
+                color: aquamarine;
+                cursor: pointer;
+                &:hover{
+                    background: hsla(160, 100%, 75%, 0.274);
+                    transition: 1s ease;
+    
+                }
+            }
+        }
+    }
+}

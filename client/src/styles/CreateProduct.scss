@@ -1,0 +1,128 @@
+.create-product{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    form{
+        border: 1px solid aquamarine;
+        border-radius: 8px;
+        box-shadow: 0 0 5px aquamarine;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        h2{
+            font-weight: 300;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                font-weight: 200;
+            }
+            .img-label{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: 15px;
+                width: 250px;
+                height: 35px;
+                border: 1px solid aquamarine;
+                border-radius: 4px;
+                box-shadow: 0 0 5px;
+                outline: none;
+                background-color: transparent;
+                color: aquamarine;
+                cursor: pointer;
+                &:hover{
+                    background: hsla(160, 100%, 75%, 0.274);
+                    transition: 1s ease;
+    
+                }
+            }
+            span{
+                font-weight: 100;
+                font-size: 15px;
+            }
+            input{
+                padding: 8px 80px 8px 8px;
+                border: 1px solid aquamarine;
+                border-radius: 4px;
+                box-shadow: 0 0 5px;
+                outline: none;
+                background-color: transparent;
+                color: aquamarine;
+                &:active{
+                    box-shadow: 0 0 20px aquamarine;
+                }
+                &::placeholder{
+                    color: aquamarine;
+                    font-weight: 100;
+                    
+                    
+                }
+            }
+            textarea{
+                border: 1px solid aquamarine;
+                border-radius: 4px;
+                outline: none;
+                background-color: transparent;
+                color: aquamarine;
+                &:active{
+                    box-shadow: 0 0 20px aquamarine;
+                }
+                &::placeholder{
+                    color: aquamarine;
+                    font-weight: 100;
+                    padding: 8px;
+                    
+                    
+                }
+            }
+            select{
+                padding: 8px 100px 8px 8px;
+                border: 1px solid aquamarine;
+                border-radius: 4px;
+                outline: none;
+                background-color: transparent;
+                color: aquamarine;
+                cursor: pointer;
+                font-weight: 100;
+                &:active{
+                    box-shadow: 0 0 20px aquamarine;
+                }
+              option{
+                background: black;
+                font-weight: 100;
+              }
+            }
+
+        }
+        button{
+            width: 250px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 15px;
+            border: 1px solid aquamarine;
+            border-radius: 8px;
+            box-shadow: 0 0 5px;
+            background: transparent;
+            color: aquamarine;
+            cursor: pointer;
+            &:hover{
+                background: hsla(160, 100%, 75%, 0.274);
+                transition: 1s ease;
+
+            }
+        }
+    }
+}
